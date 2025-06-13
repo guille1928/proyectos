@@ -121,10 +121,6 @@ Connection conecta = null;
 try {
 
 conecta= DriverManager.getConnection(url, usuario, password);
-
-
-
-
 System.out.println("La conexión fue correcta");
 }catch (SQLException e) {
 	System.out.println("Hubo un error en la conexión" + e);
@@ -154,8 +150,5 @@ public static boolean modificarBasedeDatos () {
 	
 	return false;
 }
-public static void main(String[] args) {
-	
-    
-}
+
 }
